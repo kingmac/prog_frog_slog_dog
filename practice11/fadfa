@@ -1,0 +1,65 @@
+import random, sys
+enemy = 'Skelton'
+enemy1 = 'Spider'
+enemy2 = 'Hambuger man'
+items = ['Dagger', 'Hotdog', 'Bryans odore']
+
+def main():
+	battle = 1
+
+	won = fight_enemy(enemy)
+	if won:
+		fgtw_1()
+	else:
+		fgtl_1()
+
+def fgtw_1():
+	type("\n  You won!:Champion:")
+	input()
+	type("\n  Welcome to the shop!:Shop Keeper:\n Whats your name\n")
+	name = input("\n  Whats your name?")
+	type("\n  Hello" + name + "Spin the wheel to decide your weapon", name)
+	type("\n  Spin the wheel!")
+	for i in range(3)
+	print (i)
+	input()
+	print("Spin the wheel")
+	
+
+
+def fgtl_1():
+	type("\n  Hello:Doctor:\nIm healing you up ok click to heal up!")
+	for i in range(30):
+		print (i)
+		input()
+	
+
+def type(str):
+	import sys
+	from time import sleep
+	for char in str:
+		sleep(0.4)
+		sys.stdout.write(char)
+		sys.stdout.flush()
+
+
+
+def fight_enemy(enemy):
+    fdmg1 = int(random.randint(1,7))
+    edmg1 = int(random.randint(1,6))
+    print("You hit a", fdmg1)
+    print("The " + enemy + " hits a", edmg1) 
+    input()
+    if edmg1 > fdmg1:
+        print("You died")
+        return False
+    elif edmg1 < fdmg1:
+        print("You killed the " + enemy)
+        return True 
+    else:
+        print("You didnt kill the " + enemy + " but you managed to escape")
+
+
+
+# Stick to bottom
+main()
