@@ -10,7 +10,7 @@ enemies = [
 weapons = [
 	['Sword', 1, 7],
 	['Axe', 3, 12],
-	['Dildo', 5, 10]
+	['Bryans odore', 5, 10]
 ]
 
 wpn = 0
